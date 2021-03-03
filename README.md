@@ -1,2 +1,2 @@
 # dsi-minicourse
-DSI mini course
+Python, Data Science & Machine Learning Mini-Course
