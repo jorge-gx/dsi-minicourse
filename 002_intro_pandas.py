@@ -61,4 +61,10 @@ print(sales_summary)
 # plot sales over time
 plt.plot(sales_summary)
 plt.xticks(rotation=45)
-plt.show()
+plt.title('Grocery Sales')
+
+# we use plt.show() to display the output plot
+# plt.show()
+
+# instead we can save it to a png
+plt.savefig('grocery_sales.png')
