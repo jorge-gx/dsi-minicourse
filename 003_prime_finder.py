@@ -12,10 +12,17 @@ primes_list = []
 
 while number_range:
     # The pop() method removes an arbitrary element from the set and returns the element removed.
-    # is based on a HashMap
-    # removes the first element, which is the smaller hashcode
-    # In the case of set of ints, it's the smallest int. <====
-    # this means we'll start by initializing prime with the value of 2
+
+    # The pop() method will usually extract the lowest element of a set.
+    # Sets however are, by definition, unordered.
+    # The items are stored internally with some order, but this internal order is determined
+    # by the hash code of the key (which is what allows retrieval to be so fast).
+    # This hashing method means that we can't 100% rely on it successfully getting the lowest value.
+    # In very rare cases, the hash provides a value that is not the lowest.
+
+    # for this small example, we'll leave this as is
+
+    # we'll start by initializing prime with the value of 2
     prime = number_range.pop()
 
     primes_list.append(prime)
